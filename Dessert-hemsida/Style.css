@@ -26,11 +26,8 @@ body {
 nav {
   display: flex;
   padding: 2% 6%;
-  justify-content: space space-between;
+  justify-content: space-between;
   align-items: center;
-}
-nav img {
-  width: 150px;
 }
 .nav-links {
   flex: 1;
@@ -39,7 +36,7 @@ nav img {
 .nav-links ul li {
   list-style: none;
   display: inline-block;
-  padding: 8px 12px;
+  padding: 8px 15px;
   position: relative;
 }
 .nav-links ul li a {
@@ -60,41 +57,6 @@ nav img {
 .nav-links ul li :hover::after {
   width: 100%;
 }
-
-.information-startsida {
-  width: 90%;
-  color: black;
-  position: absolute;
-  top: 33%;
-  left: 20%;
-  transform: translate(-50%, -33%);
-  text-align: center;
-}
-
-.information-startsida h1 {
-  font-size: 50px;
-}
-
-.information-startsida p {
-  margin: 10px 0 40px;
-  color: black;
-}
-.about-us-knapp {
-  display: inline-block;
-  text-decoration: none;
-  color: black;
-  border: 1px solid black;
-  padding: 12px 34px;
-  font-size: 13px;
-  background: transparent;
-  position: relative;
-  cursor: pointer;
-}
-.about-us-knapp:hover {
-  border: 1px solid white;
-  background: white;
-  transition: 1s;
-}
 @media (max-width: 700px) {
   .information-startsida h1 {
     font-size: 30px;
@@ -112,4 +74,40 @@ nav img {
     text-align: left;
     z-index: 2;
   }
+}
+.information-startsida {
+  min-height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(4, 9, 30, 0), rgba(4, 9, 30, 0)),
+    url(bakgrund.jpg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+.text-startsida {
+  width: 90%;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.text-startsida {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 24px;
+  text-align: left;
+  width: 50%;
+  text-align: center;
+}
+.text-startsida h1 {
+  font-size: 62px;
+  font-family: "Times New Roman", Times, serif;
+}
+.text-startsida p {
+  margin: 20px 0 40px;
+  font-size: 20px;
+  color: rgb(253, 1, 1);
 }
