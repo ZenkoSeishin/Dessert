@@ -14,13 +14,10 @@ p {
   display: flex;
   flex-flow: row;
   justify-content: space-between;
+  justify-content: right;
 }
 body {
   margin: 0%;
-}
-
-.hej {
-  font-size: 40px;
 }
 
 nav {
@@ -78,7 +75,10 @@ nav {
 .information-startsida {
   min-height: 100vh;
   width: 100%;
-  background-image: linear-gradient(rgba(4, 9, 30, 0), rgba(4, 9, 30, 0)),
+  background-image: linear-gradient(
+      rgba(4, 9, 30, 0.123),
+      rgba(4, 9, 30, 0.123)
+    ),
     url(bakgrund.jpg);
   background-position: center;
   background-size: cover;
@@ -103,13 +103,13 @@ nav {
   text-align: center;
 }
 .text-startsida h1 {
-  font-size: 62px;
+  font-size: 65px;
   font-family: "Times New Roman", Times, serif;
 }
 .text-startsida p {
   margin: 20px 0 40px;
-  font-size: 20px;
-  color: rgb(253, 1, 1);
+  font-size: 25px;
+  color: rgb(8, 0, 0);
 }
 
 .knapp-start {
@@ -125,8 +125,8 @@ nav {
 }
 
 .knapp-start:hover {
-  border: 1px solid green;
-  background: green;
+  border: 1px solid #b56e3d;
+  background: #b65e3d;
   transition: 1s;
 }
 
@@ -137,7 +137,7 @@ nav {
 }
 .Vad-erbjuder-vi {
   flex-basis: 31%;
-  background: brown;
+  background: #877071;
   border-radius: 10px;
   margin-bottom: 5%;
   padding: 20px 12px;
@@ -185,8 +185,57 @@ h3 {
 }
 .Vart-befinner-vi-oss {
   flex-basis: 32%;
-  margin-bottom: 30px;
   border-radius: 10px;
+  margin-bottom: 30px;
   position: relative;
   overflow: hidden;
+}
+.Vart-befinner-vi-oss img {
+  width: 100%;
+  display: block;
+}
+.lager {
+  background: transparent;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: 0.5s;
+}
+.lager:hover {
+  background: rgba(226, 0, 0, 0.7);
+}
+.lager h3 {
+  width: 100%;
+  font-weight: 500;
+  color: white;
+  font-size: 30px;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+  opacity: 0;
+  transition: 0.5s;
+}
+.lager:hover h3 {
+  bottom: 49%;
+  opacity: 1;
+}
+
+.Undrar {
+  margin: 100px auto;
+  width: 80%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(Nti.jpg);
+  background-position: center;
+  background-size: cover;
+  border-radius: 10px;
+  text-align: center;
+  padding: 100px 0;
+}
+.Undrar h1 {
+  color: white;
+  margin-bottom: 40px;
+  padding: 0;
 }
